@@ -1,13 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
+import WelcomeView from '../views/WelcomeView.vue'
+import NavBarExample from '../components/Nav/NavBarExample.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
-            name: 'home',
-            component: HomeView
+            name: 'welcome',
+            component: WelcomeView
+        },
+        {
+            path: '/navbar-example',
+            name: 'navbar-example',
+            component: NavBarExample
         }
     ]
 })
